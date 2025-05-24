@@ -1,0 +1,47 @@
+/* Fundo simples e chamativo */
+body {
+  background: linear-gradient(to bottom, #1e90ff, #87ceeb, #d3d3d3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container centralizado */
+.container {
+  text-align: center;
+  color: white;
+}
+
+/* Título chamativo */
+.titulo {
+  font-size: 2.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Botão estilizado */
+.botao {
+  background: linear-gradient(to bottom, #1E90ff,#87ceeb, #d3d3d3);
+  color: #007bff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Efeito hover */
+.botao:hover {
+  background-color: #00c6ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Animação suave na entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

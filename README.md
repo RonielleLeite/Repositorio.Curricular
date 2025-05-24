@@ -1,2 +1,2 @@
-# Repositorio.Curricular
+# Repositorio-Curricular
 Portifólio Curricular desenvolvido em Html5, CSS3, JavaScript e mais...

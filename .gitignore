@@ -1,0 +1,10 @@
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Ignorar pastas específicas
+/AppData/
+/Downloads/
+/Documents/

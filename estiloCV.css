@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom,#1E90ff,#87ceeb, #d3d3d3);
+    color: #333;
+    text-align: center;
+    margin-top: 60px;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style: none;
+}
+.nav ul li a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+/* Estilização base da barra de navegação */
+.nav {
+    position: fixed; /* Mantém o menu fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(120deg, #007bff, #00c6ff);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilização dos itens do menu */
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.nav ul li a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Menu reduzido ao rolar */
+.nav.scroll {
+    background: rgba(0, 0, 0, 0.8); /* Fundo mais escuro para efeito dinâmico */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+    .nav ul li {
+        margin: 10px 0;
+    }
+    .nome{
+        padding-top: 200px;
+    }
+}
+h1, h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/*Botões de navegações - Interatividade*/
+.nav ul li a:hover {
+    color: yellow;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00c6ff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/*remover "pontos de listas (li)"*/
+li{
+    list-style: none;
+}
+.listaCompHab{
+    display: flex;
+    flex-wrap: wrap; /* Para quebrar em múltiplas linhas se necessário */
+    justify-content: space-around; /* Distribui os ícones de maneira uniforme */
+    align-items: center;
+}
+.listaCompHab li i{
+    margin-right: 5px;
+    font-size: 25px;
+}
+.listaCompHab li .fa-html5 { color: #E34F26; margin: 5px; } /* Laranja HTML */
+.listaCompHab li .fa-css3-alt { color: #1572B6; } /* Azul CSS */
+.listaCompHab li .fa-js { color: #F7DF1E; } /* Amarelo JS */
+.listaCompHab li .fa-react { color: #61DAFB; } /* Azul claro React */
+.listaCompHab li .fa-angular { color: #DD0031; } /* Vermelho Angular */
+.listaCompHab li .fa-python { color: #3776AB; } /* Azul Python */
+.listaCompHab li .fa-bootstrap { color: #7952B3; } /* Roxo Bootstrap */
+footer {
+    text-align: center;
+    padding: 3px;
+    bottom: 0;
+    width: 100%;
+}
